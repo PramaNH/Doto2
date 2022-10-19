@@ -1,0 +1,518 @@
+body{
+  font-family: 'Trajan Pro';
+  color: white;
+  margin: 0;
+  cursor: default;
+}
+.homepage{
+  background-image: url("assets/WallpaperGradient.png");
+  background-repeat: no-repeat;
+  height: 1100px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+header{
+  height: 100px;
+  display: flex;
+}
+.logo>a>img{
+  width: 200px;
+  height: 100px;
+  margin-top: 16px;
+  margin-left: 18px;
+}
+.menu{
+  font-size: 40pt;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.content {
+  display: none;
+  background-color: rgb(29, 27, 27);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.content a:hover{
+  color: red;
+}
+.dropdown:hover .content {
+  display: block;
+}
+footer{
+  background-color: black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rating{
+  width: 180px;
+  margin: 10px auto;
+}
+.textFooter{
+  font-size: 10pt;
+  color: white;
+  text-align: center;
+}
+/* Section for home (index.html) */
+.homeSection{
+  align-items: center;
+  margin-top: 80px;
+}
+.quote{
+  font-size: 60pt;
+  text-align: center;
+  font-weight: bold;
+}
+.quote>div{
+  font-size: 20pt;
+  color: grey;
+}
+.regisBox{
+  margin-left: auto;
+  margin-right: auto;
+  width: 22%;
+}
+.regisBox>a{
+  text-decoration: none;
+  color: white;
+}
+.box{
+  padding: 15px;
+  border: 8px solid white;
+  border-radius: 10px;
+  font-size: 50pt;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.desc{
+  margin-top: 150px;
+  font-size: 30pt;
+  text-align: center;
+  font-weight: bold;
+}
+.subDesc{
+  margin-top: 75px;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+}
+.gameOverview{
+  background-image: url("assets/Background1.png");
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.gameOverview>div{
+  padding: 100px;
+  font-size: 50pt;
+  font-weight: bold;
+}
+/* Heroes Page */
+.homepageHeroes{
+  
+  background: linear-gradient(to bottom right, #252627 18%, #615c5f 100%);
+  height: max-content;
+  width: 100%;
+}
+.heroesSection{
+  align-items: center;
+  margin-top: 40px;
+}
+.title{
+  font-size: 48pt;
+  text-align: center;
+  font-weight: bold;
+}
+.hero{
+  padding: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  width: 90%;
+  font-size: 20pt;
+  margin-left: 40px;
+  margin-top: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+.heroesDesc{
+  display: flex;
+  flex-direction: column;
+}
+.heroesTitle{
+  /* padding-left: 160px; */
+  font-size: 35pt;
+}
+.heroesTitle>div{
+  font-size: 15pt;
+  text-align: justify;
+}
+.heroImg{
+  width: 400px;
+  height: 350px;
+  padding: 25px;
+}
+.skillImg{
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+}
+.skills{
+  margin-top: 50px;
+  display:inline-flex;
+  flex-direction: row;
+}
+.skill{
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.skillDesc{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.skill:hover .skillDesc{
+  display: block;
+}
+@media only screen and (max-width: 1200px) {
+  .heroImg{
+    width: 300px;
+    height: 250px;
+  }
+  .heroesTitle{
+    font-size: 30pt;
+  }
+  .heroesTitle>div{
+    font-size: 10pt;
+    text-align: justify;
+  }
+  .skillImg{
+    width: 60px;
+    height: 60px;
+  }
+}
+/* Registration Page (regis.html)*/
+.homepageRegis{
+  
+  background: linear-gradient(to bottom right, #4c4d4d 0%, #ec946f 100%);  
+  height: 937px;
+  width: 100%;
+}
+.regisSection{
+  width: 90%;
+  max-width: 390px;
+  margin: 10vh auto;
+  margin-top: 40px;
+}
+form{
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.input{
+  width: 100%;
+  height: 20px;
+  padding: 20px;
+  border: 0;
+  display: block;
+  outline: 0;
+  color: black;
+  background-color: #e6e5f0;
+  font-family: 'Trajan Pro';
+}
+.optInput{
+  font-family: 'Trajan Pro';
+}
+#options{
+  padding: 5px;
+  border-radius: 6px;
+  margin-left: 60px;
+}
+#date{
+  padding: 5px;
+  border-radius: 6px;
+  margin-left: 0px;
+  width: 180px;
+}
+#button{
+  display: block;
+  padding: 20px;
+  width: 100%;
+  color: black;
+  background: rgb(248, 245, 245);
+  border: 0;
+  border-bottom: 4px solid grey;
+  cursor:pointer;
+  font-family: 'Trajan Pro';
+  font-size: 15pt;
+  box-shadow: 0px 5px 10px black;
+}
+#button:hover{
+  color: red;
+}
+#username, #age, #email, #password{
+  width: 100%;
+}
+.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Trajan Pro';
+}
+.input::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Trajan Pro';
+}
+.input:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Trajan Pro';
+}
+
+/* Game mechanics (mechanics.html) */
+.homepageGame{
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  height: 1930px;
+}
+.gameSection{
+  align-items: center;
+}
+.boxDesc{
+  background-color: rgb(42, 40, 40);
+  padding: 40px;
+  margin: 10vh auto;
+  width: 700px;
+  text-align: justify;
+  font-size: 15pt;
+  font-family: 'Helvetica';
+}
+.subTitle{
+  font-size: 20pt;
+}
+.imgMap{
+  width: 300px;
+  height: 300px;
+}
+
+/* Merch page (merch.html) */
+.homepageMerch{
+  background-color: grey;
+  height: 937px;
+}
+.merchSection{
+  display: flex;
+  flex-direction: row;
+}
+.merchBox{
+  padding: 15px;
+  border: 8px solid white;
+  border-radius: 10px;
+  font-size: 25pt;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  width: 22%;
+  align-items: center;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.merchBox>img{
+  width: 300px;
+  height: 350px;
+}
+@media only screen and (max-width: 1600px) {
+  .homepageMerch{
+    height: 2500px;
+  }
+  .merchSection{
+    display: flex;
+    flex-direction: column;
+  }
+  .merchBox{
+    font-size: 20pt;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .homepageMerch{
+    height: 2200px;
+  }
+  .merchBox>img{
+    width: 200px;
+    height: 250px;
+  }
+  .merchBox{
+    height: 350px;
+    font-size: 15pt;
+  }
+}
+
+
+
+/* Mobile Screen Below 800 pixel */
+@media only screen and (max-width:800px){
+  .homepage{
+    background-image: url("assets/WallpaperGradient.png");
+    background-repeat: no-repeat;
+    height: 1100px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .logo>a>img{
+    width: 100px;
+    height: 50px;
+    margin-top: 16px;
+    margin-left: 18px;
+  }
+  .menu{
+    font-size: 20pt;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .dropdown{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .rating{
+    width: 90px;
+    margin: 10px auto;
+    margin-left: 10px;
+  }
+  .textFooter{
+    font-size: 5pt;
+    color: white;
+    text-align: center;
+  }
+  .quote{
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+  }
+  .quote>div{
+    font-size: 20pt;
+    color: grey;
+  }
+  .regisBox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+  }
+  .box{
+    padding: 15px;
+    border: 8px solid white;
+    border-radius: 10px;
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    display: block;
+  }
+  .desc{
+    margin-top: 150px;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+  }
+  .subDesc{
+    margin-top: 75px;
+    font-size: 15pt;
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+  }
+  .gameOverview>div{
+    padding: 100px;
+    font-size: 20pt;
+    font-weight: bold;
+  }
+  .hero{
+    width: 70%;
+    flex-direction: column;
+  }
+  .title{
+    font-size: 30pt;
+  }
+  .heroImg{
+    width: 200px;
+    height: 150px;
+    padding: 25px;
+  }
+  .skillImg{
+    width: 40px;
+    height: 40px;
+  }
+  .heroesTitle{
+    font-size: 15pt;
+  }
+  .heroesTitle>div{
+    font-size: 10pt;
+  }
+  .skillDesc{
+    font-size: 8pt;
+  }
+  #options, #date{
+    width: 140px;
+  }
+  .boxDesc{
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+    font-size: 10pt;
+    font-family: 'Helvetica';
+  }
+  .subTitle{
+    font-size: 13pt;
+  }
+  .imgAncients{
+    height: 100px;
+    width: 200px;
+  }
+  .imgMap{
+    height: 100px;
+    width: 100px;
+  }
+  .homepageGame{
+    height: 1200px;
+  }
+  .homepageMerch{
+    height: 1400px;
+  }
+  .merchSection{
+    flex-direction: column;
+  }
+  .merchBox{
+    font-size: 15pt;
+    height: 200px;
+    width: 200px;
+  }
+  .merchBox>img{
+    width: 120px;
+    height: 150px;
+  }
+}

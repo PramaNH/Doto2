@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doto 2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class = "homepageRegis">
+    <header>
+      <div class="logo">
+        <a href = "index.html">
+          <img src = "assets/Logo.png">
+        </a>
+      </div>
+      <div class="dropdown">
+        <span class="menu">Menu</span>
+        <div class ="content">
+          <a href="index.html">Home</a>
+          <a href="heroes.html">Heroes</a>
+          <a href="mechanics.html">Game Mechanics</a>
+          <a href="merch.html">Merchandises</a>
+          <a href="regis.html">Registration</a>
+        </div>
+      </div>
+    </header>
+    <section class = "regisSection">
+      <div class="title">Register</div>
+      <form>
+        <div>
+          <input type="text" name="username" id="username" placeholder="Username ( >6 Characters )" class="input">
+        </div>
+        <div>
+          <input type="text" name="email" id="email" placeholder="Email" class="input">
+        </div>
+        <div>
+          <input type="password" name="password" id="password" placeholder="Password ( >8 Characters )" class="input">
+        </div>
+        <div class="input">
+          Region:
+          <select id="options" class="optInput">
+            <option value="blank" class="optInput">--Choose your region--</option>
+            <option value="Asia" class="optInput">Asia</option>
+            <option value="Africa" class="optInput">Africa</option>
+            <option value="North America" class="optInput">North America</option>
+            <option value="South America" class="optInput">South America</option>
+            <option value="Antartica" class="optInput">Antartica</option>
+            <option value="Europe" class="optInput">Europe</option>
+            <option value="Australia" class="optInput">Australia</option>
+        </select>
+        </div>
+        <div class="input">
+          Date Of Birth:
+          <input type="date" name="date" id="date">
+        </div>
+        <div>
+          <button id="button" type="button">Submit</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <div>
+      <img src="assets/esrbrating.jpeg" class="rating">
+    </div>
+    <div class="textFooter">
+      © Doto games, inc. Doto games, doto 2, and any associated logos are trademarks, service marks, and/or registered trademarks of doto games, inc.
+    </div>
+  </footer>
+</body>
+</html>
